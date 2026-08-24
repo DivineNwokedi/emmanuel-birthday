@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>For Emmanuel ♡</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+    <!-- =========================
+         BACKGROUND MUSIC
+    ========================== -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source
+            src="music/birthday-instrumental.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button
+        id="musicToggle"
+        class="music-toggle"
+        aria-label="Toggle music"
+    >
+        ♫
+    </button>
+
+
+
     <main>
+
 
         <!-- =========================
              HERO
@@ -19,146 +50,177 @@
 
         <section class="hero">
 
-            <div class="hero-stars"></div>
+            <div class="stars"></div>
 
-            <p class="small-note">A little something for you...</p>
+            <div class="hero-content">
 
-            <h1>For Emmanuel</h1>
+                <p class="small-note">
+                    A little something for you...
+                </p>
 
-            <p class="intro-text">
-                A little piece of our story,
-                made with love.
-            </p>
+                <h1>
+                    For Emmanuel
+                </h1>
 
-            <button id="beginButton">
-                Begin our story
-            </button>
+                <p class="intro-text">
 
-            <div class="scroll-hint">
-                <span></span>
-                scroll
+                    A little piece of our story,
+                    made with love.
+
+                </p>
+
+                <button id="beginButton">
+
+                    Begin our story
+
+                </button>
+
             </div>
 
         </section>
 
 
+
         <!-- =========================
-             OUR STORY — CINEMATIC
+             OUR STORY
         ========================== -->
 
-        <section class="story-section" id="story">
+        <section
+            class="story-section"
+            id="story"
+        >
 
-            <div class="story-cosmos">
+            <!-- COSMIC BACKGROUND -->
 
-                <!-- Animated stars -->
-                <div class="stars"></div>
+            <div class="cosmic-background">
 
-                <!-- Constellation canvas -->
-                <canvas id="constellationCanvas"></canvas>
+                <div class="star-field"></div>
 
-                <!-- Soft cosmic glow -->
-                <div class="cosmic-glow glow-one"></div>
-                <div class="cosmic-glow glow-two"></div>
+                <div class="constellation constellation-one">
 
-                <!-- Story text -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-                <div class="story-content">
+                </div>
 
-                    <p class="small-note story-label">
-                        Somewhere in the universe...
+
+                <div class="constellation constellation-two">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="orbit"></div>
+
+            </div>
+
+
+
+            <!-- STORY CONTENT -->
+
+            <div class="story-content">
+
+                <p class="small-note">
+                    It started somewhere...
+                </p>
+
+                <h2>
+                    Our story
+                </h2>
+
+
+                <div class="story-line">
+
+                    <p class="story-text">
+                        Some people enter your life quietly.
                     </p>
 
-                    <div class="story-line-container">
+                    <p class="story-text">
+                        You don't always realize,
+                        at first,
+                        how much space they will eventually
+                        occupy in your heart.
+                    </p>
 
-                        <p
-                            class="story-line active"
-                            data-story="Some people enter your life quietly."
-                        >
-                            Some people enter your life quietly.
-                        </p>
+                </div>
 
-                        <p
-                            class="story-line"
-                            data-story="You don't always realize, at first, how much space they will eventually occupy in your heart."
-                        >
-                            You don't always realize, at first,
-                            how much space they will eventually
-                            occupy in your heart.
-                        </p>
 
-                        <p
-                            class="story-line"
-                            data-story="And then, somehow, there is a person whose presence becomes part of your days."
-                        >
-                            And then, somehow,
-                            there is a person whose presence
-                            becomes part of your days.
-                        </p>
+                <div class="story-line">
 
-                        <p
-                            class="story-line"
-                            data-story="Your thoughts. Your smiles. The little things you remember."
-                        >
-                            Your thoughts.
-                            Your smiles.
-                            The little things you remember.
-                        </p>
+                    <p class="story-text">
+                        And then somehow...
+                    </p>
 
-                        <p
-                            class="story-line"
-                            data-story="Maybe it wasn't planned."
-                        >
-                            Maybe it wasn't planned.
-                        </p>
+                    <p class="story-text">
+                        two people,
+                        living their own separate lives,
+                        find themselves standing
+                        beneath the same sky.
+                    </p>
 
-                        <p
-                            class="story-line"
-                            data-story="Maybe two people simply found themselves walking toward the same little corner of the universe."
-                        >
-                            Maybe two people simply found themselves
-                            walking toward the same little corner
-                            of the universe.
-                        </p>
+                </div>
 
-                        <p
-                            class="story-line"
-                            data-story="And somewhere between the conversations, the laughter, the distance, and the waiting..."
-                        >
-                            And somewhere between the conversations,
-                            the laughter, the distance,
-                            and the waiting...
-                        </p>
 
-                        <p
-                            class="story-line"
-                            data-story="something became ours."
-                        >
-                            Something became ours.
-                        </p>
+                <div class="story-line">
 
-                        <p
-                            class="story-line final-story"
-                            data-story="This is our story."
-                        >
-                            This is our story.
-                        </p>
+                    <p class="story-text">
+                        Somewhere between conversations,
+                        laughter,
+                        quiet moments,
+                        and everything in between...
+                    </p>
 
-                    </div>
+                    <p class="story-text emphasis">
+                        talking became something more.
+                    </p>
 
-                    <div class="story-progress">
-                        <span id="storyProgress">01</span>
-                        <div class="progress-line">
-                            <span id="progressFill"></span>
-                        </div>
-                        <span id="storyTotal">09</span>
-                    </div>
+                </div>
 
-                    <button
-                        class="replay-button"
-                        id="replayStory"
-                    >
-                        Replay our story ↻
-                    </button>
+
+                <div class="story-line">
+
+                    <p class="story-text">
+                        And somehow,
+                        without either of us noticing,
+                    </p>
+
+                    <p class="story-text emphasis">
+                        we became us.
+                    </p>
+
+                </div>
+
+
+                <div class="story-line">
+
+                    <p class="story-text">
+                        Maybe it wasn't coincidence.
+                    </p>
+
+                    <p class="story-text">
+                        Maybe some paths are simply meant
+                        to cross.
+                    </p>
+
+                </div>
+
+
+                <div class="story-ending">
+
+                    <span class="story-star">✦</span>
+
+                    <p>
+                        Whatever brought you into my life,
+                        I'm glad it did.
+                    </p>
+
+                    <span class="story-star">♡</span>
 
                 </div>
 
@@ -167,11 +229,15 @@
         </section>
 
 
+
         <!-- =========================
              TIMELINE
         ========================== -->
 
-        <section class="timeline-section" id="timeline">
+        <section
+            class="timeline-section"
+            id="timeline"
+        >
 
             <div class="section-heading">
 
@@ -179,14 +245,20 @@
                     A little journey through time...
                 </p>
 
-                <h2>Our little timeline</h2>
+                <h2>
+                    Our little timeline
+                </h2>
 
                 <p class="section-intro">
-                    From the first conversations to the person
-                    whose birthday I get to celebrate.
+
+                    From the first conversations
+                    to the person whose birthday
+                    I get to celebrate.
+
                 </p>
 
             </div>
+
 
 
             <div class="timeline">
@@ -198,18 +270,26 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">January</span>
+                    <span class="month">
+                        January
+                    </span>
 
-                    <h3>The beginning</h3>
+                    <h3>
+                        The beginning
+                    </h3>
 
                     <p>
+
                         We started talking.
-                        I didn't know then that those conversations
-                        would become the beginning of something
-                        so important to me.
+                        I didn't know then that those
+                        conversations would become the
+                        beginning of something so important
+                        to me.
+
                     </p>
 
                 </article>
+
 
 
                 <!-- FEBRUARY -->
@@ -218,17 +298,26 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">February</span>
+                    <span class="month">
+                        February
+                    </span>
 
-                    <h3>The beginning of us</h3>
+                    <h3>
+                        The beginning of us
+                    </h3>
 
                     <p>
-                        Somewhere along the way, talking became
-                        something more.
-                        And February became the month we became us.
+
+                        Somewhere along the way,
+                        talking became something more.
+
+                        And February became the month
+                        we became us.
+
                     </p>
 
                 </article>
+
 
 
                 <!-- MARCH -->
@@ -237,18 +326,27 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">March</span>
+                    <span class="month">
+                        March
+                    </span>
 
-                    <h3>Learning you</h3>
+                    <h3>
+                        Learning you
+                    </h3>
 
                     <p>
+
                         The newness slowly became familiar.
+
                         I was learning your little ways,
-                        your thoughts, and the person behind
+                        your thoughts,
+                        and the person behind
                         the conversations.
+
                     </p>
 
                 </article>
+
 
 
                 <!-- APRIL -->
@@ -257,17 +355,25 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">April</span>
+                    <span class="month">
+                        April
+                    </span>
 
-                    <h3>Becoming closer</h3>
+                    <h3>
+                        Becoming closer
+                    </h3>
 
                     <p>
-                        Somewhere between the ordinary conversations
-                        and the little moments,
-                        you became a bigger part of my everyday life.
+
+                        Somewhere between the ordinary
+                        conversations and the little moments,
+                        you became a bigger part of
+                        my everyday life.
+
                     </p>
 
                 </article>
+
 
 
                 <!-- MAY -->
@@ -276,15 +382,23 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">May</span>
+                    <span class="month">
+                        May
+                    </span>
 
-                    <h3>I love hearing you talk</h3>
+                    <h3>
+                        I love hearing you talk
+                    </h3>
 
                     <p>
+
                         Somewhere between our conversations
                         and hearing your voice,
-                        you became even more precious to me.
+                        you became even more precious
+                        to me.
+
                     </p>
+
 
                     <div class="memory">
 
@@ -299,23 +413,34 @@
                 </article>
 
 
+
                 <!-- JUNE -->
 
                 <article class="timeline-card reveal">
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">June</span>
+                    <span class="month">
+                        June
+                    </span>
 
-                    <h3>The month you felt even closer</h3>
+                    <h3>
+                        The month you felt even closer
+                    </h3>
 
                     <p>
-                        June gave me little pieces of you that I wanted
-                        to keep forever — your birthday wishes,
-                        your voice, your songs, your "I love you"s,
-                        and all the moments that made the distance
-                        feel a little smaller.
+
+                        June gave me little pieces of you
+                        that I wanted to keep forever —
+                        your birthday wishes,
+                        your voice,
+                        your songs,
+                        your "I love you"s,
+                        and all the moments that made
+                        the distance feel a little smaller.
+
                     </p>
+
 
                     <div class="memory">
 
@@ -327,19 +452,23 @@
 
                     </div>
 
+
                     <div class="memory">
 
                         <span>♪</span>
 
                         <p>
+
                             And somewhere in that month,
                             you wanted to sing a song for me —
                             <em>Je te laisserai des mots.</em>
+
                         </p>
 
                     </div>
 
                 </article>
+
 
 
                 <!-- JULY -->
@@ -348,28 +477,39 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">July</span>
+                    <span class="month">
+                        July
+                    </span>
 
-                    <h3>One day, we'll finally meet</h3>
+                    <h3>
+                        One day, we'll finally meet
+                    </h3>
 
                     <p>
+
                         We talked about holding hands,
                         hugging,
                         and all the little things
                         distance had made us wait for.
+
                     </p>
+
 
                     <div class="memory">
 
                         <span>♡</span>
 
                         <p>
-                            One day, the distance won't be between us.
+
+                            One day,
+                            the distance won't be between us.
+
                         </p>
 
                     </div>
 
                 </article>
+
 
 
                 <!-- AUGUST -->
@@ -378,19 +518,28 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">August</span>
+                    <span class="month">
+                        August
+                    </span>
 
-                    <h3>Still choosing you</h3>
+                    <h3>
+                        Still choosing you
+                    </h3>
 
                     <p>
+
                         Not every day was easy.
+
                         But through the distance,
                         the quiet days,
                         and everything in between,
+
                         there was still us.
+
                     </p>
 
                 </article>
+
 
 
                 <!-- SEPTEMBER -->
@@ -399,16 +548,25 @@
 
                     <div class="timeline-dot"></div>
 
-                    <span class="month">September</span>
+                    <span class="month">
+                        September
+                    </span>
 
-                    <h3>Your day</h3>
+                    <h3>
+                        Your day
+                    </h3>
 
                     <p>
+
                         September 12.
+
                         The day the world gets to celebrate you.
+
                         And the day I get to remind you
                         how loved you are.
+
                     </p>
+
 
                     <div class="birthday-note">
 
@@ -420,16 +578,21 @@
 
                 </article>
 
+
             </div>
 
         </section>
+
 
 
         <!-- =========================
              THINGS I ADORE
         ========================== -->
 
-        <section class="love-section" id="love">
+        <section
+            class="love-section"
+            id="love"
+        >
 
             <div class="section-heading">
 
@@ -437,11 +600,17 @@
                     There are little things...
                 </p>
 
-                <h2>Things I adore about you</h2>
+                <h2>
+                    Things I adore about you
+                </h2>
 
                 <p class="section-intro">
-                    The little things, the quiet things,
-                    and the things that make you unmistakably you.
+
+                    The little things,
+                    the quiet things,
+                    and the things that make you
+                    unmistakably you.
+
                 </p>
 
             </div>
@@ -452,110 +621,171 @@
 
                 <article class="love-card reveal">
 
-                    <span class="love-number">01</span>
+                    <span class="love-number">
+                        01
+                    </span>
 
-                    <h3>Your voice</h3>
+                    <h3>
+                        Your voice
+                    </h3>
 
                     <p>
-                        I could listen to you talk for longer
-                        than I probably should.
+
+                        I could listen to you talk
+                        for longer than I probably should.
+
                         There's something about your voice
                         that makes me want to stay.
+
                     </p>
 
-                    <div class="love-symbol">♡</div>
+                    <div class="love-symbol">
+                        ♡
+                    </div>
 
                 </article>
 
 
+
                 <article class="love-card reveal">
 
-                    <span class="love-number">02</span>
+                    <span class="love-number">
+                        02
+                    </span>
 
-                    <h3>Your mind</h3>
+                    <h3>
+                        Your mind
+                    </h3>
 
                     <p>
+
                         I love the way you think.
-                        You're logical, thoughtful,
+
+                        You're logical,
+                        thoughtful,
                         sometimes wonderfully complicated,
                         and always interesting to me.
+
                     </p>
 
-                    <div class="love-symbol">✦</div>
+                    <div class="love-symbol">
+                        ✦
+                    </div>
 
                 </article>
 
 
+
                 <article class="love-card reveal">
 
-                    <span class="love-number">03</span>
+                    <span class="love-number">
+                        03
+                    </span>
 
-                    <h3>The little ways you care</h3>
+                    <h3>
+                        The little ways you care
+                    </h3>
 
                     <p>
+
                         Sometimes it's in the smallest things.
+
                         The apologies.
                         The explanations.
-                        The moments when you try to make things right.
+                        The moments when you try
+                        to make things right.
+
                     </p>
 
-                    <div class="love-symbol">♡</div>
+                    <div class="love-symbol">
+                        ♡
+                    </div>
 
                 </article>
 
 
+
                 <article class="love-card reveal">
 
-                    <span class="love-number">04</span>
+                    <span class="love-number">
+                        04
+                    </span>
 
-                    <h3>Your softness</h3>
+                    <h3>
+                        Your softness
+                    </h3>
 
                     <p>
-                        Beneath all your logic and your quiet moments,
-                        there is a softness I get to see sometimes.
+
+                        Beneath all your logic
+                        and your quiet moments,
+                        there is a softness
+                        I get to see sometimes.
+
                         I treasure those pieces of you.
+
                     </p>
 
-                    <div class="love-symbol">✦</div>
+                    <div class="love-symbol">
+                        ✦
+                    </div>
 
                 </article>
 
 
+
                 <article class="love-card reveal">
 
-                    <span class="love-number">05</span>
+                    <span class="love-number">
+                        05
+                    </span>
 
                     <h3>
                         The way you make ordinary moments matter
                     </h3>
 
                     <p>
+
                         A conversation.
                         A song.
                         A random joke.
+
                         Somehow, with you,
                         little things become memories.
+
                     </p>
 
-                    <div class="love-symbol">♡</div>
+                    <div class="love-symbol">
+                        ♡
+                    </div>
 
                 </article>
 
 
+
                 <article class="love-card reveal">
 
-                    <span class="love-number">06</span>
+                    <span class="love-number">
+                        06
+                    </span>
 
-                    <h3>You, exactly as you are</h3>
+                    <h3>
+                        You, exactly as you are
+                    </h3>
 
                     <p>
+
                         At the end of every list,
                         every reason and every explanation,
                         there is simply this:
+
                         I adore you because you're you.
+
                     </p>
 
-                    <div class="love-symbol">♡</div>
+                    <div class="love-symbol">
+                        ♡
+                    </div>
 
                 </article>
 
@@ -566,22 +796,31 @@
             <div class="love-ending reveal">
 
                 <p>
-                    And I'm sure I'll discover a hundred more reasons
+
+                    And I'm sure I'll discover
+                    a hundred more reasons
                     the longer I know you.
+
                 </p>
 
-                <span>— D ♡</span>
+                <span>
+                    — D ♡
+                </span>
 
             </div>
 
         </section>
 
 
+
         <!-- =========================
              LETTER
         ========================== -->
 
-        <section class="letter-section" id="letter">
+        <section
+            class="letter-section"
+            id="letter"
+        >
 
             <div class="letter-intro reveal">
 
@@ -594,7 +833,10 @@
                 </h2>
 
                 <p class="letter-subtitle">
-                    Not everything I feel fits neatly into a conversation.
+
+                    Not everything I feel fits neatly
+                    into a conversation.
+
                 </p>
 
                 <button
@@ -606,6 +848,9 @@
 
             </div>
 
+
+
+            <!-- LETTER OVERLAY -->
 
             <div
                 class="letter-wrapper"
@@ -629,193 +874,339 @@
                             September 12, 2026
                         </p>
 
+
                         <h3>
                             My dear Emmanuel,
                         </h3>
 
+
                         <p>
+
                             So... it's your birthday.
-                            Which means I am officially allowed to be
-                            unbearably sweet about you today.
+
+                            Which means I am officially allowed
+                            to be unbearably sweet about you today.
+
                             Don't get too comfortable though. 🤭
+
                         </p>
 
+
                         <p>
-                            I sometimes wonder how one person can slowly become
-                            such a familiar part of another person's life.
-                            Because somehow, without either of us noticing,
+
+                            I sometimes wonder how one person
+                            can slowly become such a familiar
+                            part of another person's life.
+
+                            Because somehow,
+                            without either of us noticing,
                             you became that for me.
+
                         </p>
 
+
                         <p>
+
                             Someone I look forward to.
-                            Someone whose voice I can listen to for far too long.
-                            Someone whose little messages can change the mood
-                            of my entire day.
+
+                            Someone whose voice I can listen to
+                            for far too long.
+
+                            Someone whose little messages
+                            can change the mood of my entire day.
+
                         </p>
 
+
                         <p>
-                            There is something about you that keeps making me
-                            want to know more.
+
+                            There is something about you
+                            that keeps making me want to know more.
+
                             More about what makes you happy.
+
                             More about the things that excite you.
-                            More about the thoughts you keep to yourself.
-                            More about the person you are when nobody is watching.
+
+                            More about the thoughts
+                            you keep to yourself.
+
+                            More about the person you are
+                            when nobody is watching.
+
                         </p>
 
-                        <p>
-                            And I love discovering those little pieces of you.
-                        </p>
 
                         <p>
+                            And I love discovering
+                            those little pieces of you.
+                        </p>
+
+
+                        <p>
+
                             I love your curiosity.
+
                             I love the way your mind wanders.
-                            I love the little things that make you excited.
-                            I love the way you can make a completely ordinary
-                            conversation feel like somewhere I want to stay.
+
+                            I love the little things
+                            that make you excited.
+
+                            I love the way you can make
+                            a completely ordinary conversation
+                            feel like somewhere I want to stay.
+
                         </p>
+
 
                         <p>
                             And your voice...
                         </p>
 
+
                         <p class="letter-emphasis">
                             Oh, your voice. ♡
                         </p>
 
+
                         <p>
-                            I don't think you fully understand what hearing you
-                            does to me.
-                            There is something so comforting about simply
-                            listening to you talk.
-                            Sometimes I don't even need you to say anything special.
+
+                            I don't think you fully understand
+                            what hearing you does to me.
+
+                            There is something so comforting
+                            about simply listening to you talk.
+
+                            Sometimes I don't even need you
+                            to say anything special.
+
                             I just like hearing you be you.
+
                         </p>
 
+
                         <p>
+
                             I love the little ways you care.
+
                             The moments when you notice.
+
                             The moments when you try.
-                            The moments when you let that softer side of you show.
+
+                            The moments when you let
+                            that softer side of you show.
+
                         </p>
 
+
                         <p>
+
                             And yes...
+
                             I notice those things.
+
                             Even when you probably think I don't. 🤭
+
                         </p>
 
+
                         <p>
+
                             I love how wonderfully yourself you are.
+
                             You have your little habits,
                             your little moods,
                             your little ways of doing things,
-                            and somehow I've grown ridiculously fond of all of them.
+
+                            and somehow I've grown
+                            ridiculously fond of all of them.
+
                         </p>
 
+
                         <p>
-                            Even the ones that make me stare at my screen
-                            and think,
+
+                            Even the ones that make me stare
+                            at my screen and think,
+
                             "Emmanuel... seriously?" 😂
+
                         </p>
+
 
                         <p>
                             But I wouldn't trade them.
                             Because they're yours.
                         </p>
 
+
                         <p>
+
                             And maybe that's what I love most.
+
                             I don't want some perfect version of you.
-                            I don't want a version carefully made to impress me.
+
+                            I don't want a version carefully made
+                            to impress me.
+
                         </p>
+
 
                         <p class="letter-emphasis">
                             I want you.
                         </p>
 
-                        <p>
-                            The boy who makes me laugh.
-                            The boy whose voice I adore.
-                            The boy who can make me miss him without even trying.
-                            The boy I still have so much left to discover.
-                        </p>
 
                         <p>
-                            There are so many versions of you I haven't met yet.
-                            The you who laughs beside me.
-                            The you who reaches for my hand.
-                            The you who gives me that look when I've said
-                            something ridiculous.
-                            The you who I get to sit beside without a screen
-                            between us.
+
+                            The boy who makes me laugh.
+
+                            The boy whose voice I adore.
+
+                            The boy who can make me miss him
+                            without even trying.
+
+                            The boy I still have so much
+                            left to discover.
+
                         </p>
+
+
+                        <p>
+
+                            There are so many versions of you
+                            I haven't met yet.
+
+                            The you who laughs beside me.
+
+                            The you who reaches for my hand.
+
+                            The you who gives me that look
+                            when I've said something ridiculous.
+
+                            The you who I get to sit beside
+                            without a screen between us.
+
+                        </p>
+
 
                         <p>
                             And I can't wait for those versions.
                         </p>
 
+
                         <p>
-                            One day, I want to look at you and realize that
-                            the person I've spent so long talking to
+
+                            One day, I want to look at you
+                            and realize that the person
+                            I've spent so long talking to
                             is finally standing right there.
+
                         </p>
 
+
                         <p>
+
                             No distance.
+
                             No screen.
+
                             No waiting for the next message.
+
                             Just you and me.
+
                         </p>
 
-                        <p>
-                            Until then, I hope you know how much I treasure
-                            what we already have.
-                        </p>
 
                         <p>
-                            I hope this new year of your life brings you
-                            beautiful things.
+
+                            Until then,
+                            I hope you know how much
+                            I treasure what we already have.
+
+                        </p>
+
+
+                        <p>
+
+                            I hope this new year of your life
+                            brings you beautiful things.
+
                             I hope you laugh loudly.
+
                             I hope you discover new things.
-                            I hope you become even more of the person
-                            you're meant to be.
+
+                            I hope you become even more
+                            of the person you're meant to be.
+
                         </p>
 
+
                         <p>
+
                             And selfishly...
-                            I hope I get to see a lot of it.
+
+                            I hope I get to see
+                            a lot of it.
+
                         </p>
 
+
                         <p>
-                            So here's to you, birthday boy.
+
+                            So here's to you,
+                            birthday boy.
+
                             To your smile.
+
                             Your voice.
+
                             Your curiosity.
+
                             Your softness.
+
                             Your ridiculous little ways.
-                            And every part of you that I've come to adore.
+
+                            And every part of you
+                            that I've come to adore.
+
                         </p>
 
-                        <p>
-                            Please don't let this letter make your ego too big.
-                            I have already complimented you enough for one day. 😂
-                        </p>
 
                         <p>
+
+                            Please don't let this letter
+                            make your ego too big.
+
+                            I have already complimented you
+                            enough for one day. 😂
+
+                        </p>
+
+
+                        <p>
+
                             Although...
+
                             between us,
+
                             I could probably keep going.
+
                         </p>
+
 
                         <p class="letter-emphasis">
                             Happy birthday, my Emmanuel. ♡
                         </p>
 
+
                         <p>
-                            I hope you always remember that there is someone
-                            who is incredibly grateful that you exist.
+
+                            I hope you always remember
+                            that there is someone who is
+                            incredibly grateful that you exist.
+
                         </p>
+
 
                         <div class="letter-signature">
 
@@ -837,10 +1228,12 @@
 
         </section>
 
+
     </main>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
